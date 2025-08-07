@@ -1,0 +1,47 @@
+{
+  "name": "tabby-ai-assistant",
+  "version": "1.0.0",
+  "description": "AI assistant plugin for Tabby terminal with network device management support",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "build": "webpack --mode production",
+    "watch": "webpack --mode development --watch",
+    "dev": "webpack --mode development",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "tabby-plugin",
+    "ai",
+    "assistant",
+    "network",
+    "terminal"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "devDependencies": {
+    "@types/node": "20.3.1",
+    "raw-loader": "^4.0.2",
+    "ts-loader": "^9.4.2",
+    "typescript": "^4.9.5",
+    "webpack": "^5.86.0",
+    "webpack-cli": "^5.0.1"
+  },
+  "peerDependencies": {
+    "tabby-core": "*",
+    "tabby-terminal": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/tabby-ai-assistant.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/tabby-ai-assistant/issues"
+  },
+  "homepage": "https://github.com/your-username/tabby-ai-assistant#readme"
+}
